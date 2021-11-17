@@ -1,0 +1,125 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "prefer-arrow"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    "no-console": "error",
+    "no-inline-comments": "error",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "arrow-body-style": "error",
+    "no-confusing-arrow": "error",
+    "prefer-arrow-callback": "warn",
+    "key-spacing": ["error", { "mode": "strict", "beforeColon": false, "afterColon": true }],
+    "keyword-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": true
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "rest-spread-spacing": "error",
+    "no-useless-rename": "error",
+    "no-irregular-whitespace": "error",
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "no-var": "error",
+    "prefer-const": "error",
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "no-multi-spaces": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "space-before-blocks": "error",
+    "space-infix-ops": "error",
+    "spaced-comment": "error",
+    "func-style": [
+      "error",
+      "expression"
+    ],
+    "no-trailing-spaces": [
+      2,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-underscore-dangle": 0,
+    "nonblock-statement-body-position": [
+      "error",
+      "beside"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ]
+  }
+}
