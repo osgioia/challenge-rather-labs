@@ -4,6 +4,4 @@ module.exports =
       models: { User },
     },
   }) =>
-  async (id) => {
-    return await User.findOne({ where: { id: id } });
-  };
+    async (id) => await User.findOne({ where: { id: id } });

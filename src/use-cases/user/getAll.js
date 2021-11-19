@@ -4,6 +4,4 @@ module.exports =
       models: { User },
     },
   }) =>
-  async () => {
-    return await User.findAll();
-  };
+    async () => await User.findAll();

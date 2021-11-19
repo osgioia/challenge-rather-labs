@@ -12,11 +12,9 @@ module.exports = (dependencies) => {
 
   api.use(Express.json());
   api.use(Express.urlencoded({ extended: true }));
-  
 
   api.use(router);
   api.use(errorHandlers.handleError);
-  
+
   return api;
 };
-
