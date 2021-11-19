@@ -10,12 +10,13 @@ const {
 
   DB_CONNECTION_URI,
   DB_NAME,
+  AUTH_KEY,
 
 } = process.env;
 
 module.exports = {
   NODE_ENV,
-  
+  AUTH_KEY,
   API: {
     CORS: API_CORS,
     PORT: PORT || API_PORT || 8081,
