@@ -3,25 +3,20 @@ const factory = require("./models");
 
 const Database = async ({
   config: {
-    DB: {
-      CONNECTION_URI,
-      NAME,
-    }
+    DB: { CONNECTION_URI, NAME },
   },
 }) => {
-  const connection = new Sequelize(
-    [CONNECTION_URI, NAME].join("/"),
-  );
+  const connection = new Sequelize([CONNECTION_URI, NAME].join("/"));
 
   await connection.authenticate();
-  
+
   Object.values(factory).forEach((model) => model(connection));
 
   await connection.sync();
 
   return {
     connection,
-    models: connection.models
+    models: connection.models,
   };
 };
 
